@@ -9,10 +9,10 @@ from data_base import database
 
 # Запуск бота
 async def on_startup(_):
-	await bot.send_message(
-		1142268145, 
-		"Бот успешно запущен"
-	)
+    await bot.send_message(
+        1142268145, 
+        "Бот успешно запущен"
+    )
 
 
 # Регистрация обработчиков сообщений
@@ -25,5 +25,5 @@ admin.register_callback_handlers(dp)
 
 # Работа бота
 executor.start_polling(
-	dp, skip_updates = True, on_startup = on_startup
+    dp, skip_updates = True, on_startup = on_startup
 )
